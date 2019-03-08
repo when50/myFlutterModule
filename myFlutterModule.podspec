@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "git@github.com:when50/myFlutterModule.git" }
+  s.source       = { :http => "https://github.com/when50/myFlutterModule/raw/master/App.zip" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,12 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = 'ios/Runner/GeneratedPluginRegistrant.{h,m}'
-  s.public_header_files = [
-    'ios/Runner/GeneratedPluginRegistrant.h'
-  ]
-  s.frameworks = 'ios/Flutter/*.framework'
-  s.vendored_frameworks	= 'ios/Flutter/*.framework'
+  s.vendored_frameworks	= 'module/*.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
