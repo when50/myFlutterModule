@@ -91,8 +91,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ios/Runner/GeneratedPluginRegistrant.{h,m}'
   s.public_header_files = [
-    'ios/Runner/GeneratedPluginRegistraint.h'
+    'ios/Runner/GeneratedPluginRegistrant.h'
   ]
+  s.frameworks = 'ios/Flutter/*.framework'
   s.vendored_frameworks	= 'ios/Flutter/*.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
