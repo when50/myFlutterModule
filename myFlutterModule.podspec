@@ -89,6 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
+  #s.vendored_frameworks	= 'myFlutterModule/App.framework, myFlutterModule/Flutter.framework'
   s.vendored_frameworks	= 'module/*.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
